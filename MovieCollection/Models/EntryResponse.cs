@@ -9,19 +9,20 @@ namespace MovieCollection.Models
         [Required]
         public int MovieID { get; set; }
 
-        [Required(ErrorMessage = "Category is required")]
-        public string Category { get; set; }
+        [Required (ErrorMessage = "Category is required")]
+        public int CategoryID { get; set; }
+        public Category Category { get; set; }
 
-        [Required(ErrorMessage = "Title is required")]
+        [Required (ErrorMessage = "Title is required")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Year is required")]
+        [Required (ErrorMessage = "Year is required")]
         public int Year { get; set; }
 
-        [Required(ErrorMessage = "Director is required")]
+        [Required (ErrorMessage = "Director is required")]
         public string Director { get; set; }
 
-        [Required(ErrorMessage = "Rating is required")]
+        [Required (ErrorMessage = "Rating is required")]
         public string Rating { get; set; }
 
         public bool Edited { get; set; }
